@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="loader"></div>
     <header>
         <div class="header_conteiner">
             <a class="logo" href="index.html"><img src="img/logo.svg"></a>
@@ -17,13 +18,16 @@
                     <li><a href="https://youtu.be/dQw4w9WgXcQ?si=2iBgfRKz2jjVjhk4">Shop</a></li>
                     <li><a href="https://youtu.be/dQw4w9WgXcQ?si=2iBgfRKz2jjVjhk4">Blog</a></li>
                     <li><a href="https://youtu.be/dQw4w9WgXcQ?si=2iBgfRKz2jjVjhk4">Contact</a></li>
+                    
                 </ul>
             </nav>
+            
             <div class="cart_conteiner">
                 <div class="cart">Cart</div>
                 <a href="https://youtu.be/dQw4w9WgXcQ?si=2iBgfRKz2jjVjhk4"><img class="cart_icon" src="img/cart_icon.svg"></a>
             </div>
         </div>
+        <button id="dark-mode-toggle">Dark mode</button>
     </header> 
     <main>
         <div class="top_conteiner">
@@ -102,7 +106,7 @@
                         
                     </div>
 
-                    <img src="img/logos.svg">
+                    <img class="logos" src="img/logos.svg">
                 </div>
                 
             </div>
@@ -121,7 +125,7 @@
                         <img src="img/work_1.png" class="work_picture">
                         <div class="top_show_cont">
                             <div>Maize Website Design</div>
-                            <img src="img/work_pointer.svg">
+                            <img class="work_pointer" src="img/work_pointer.svg">
                         </div>
                         <div style="margin-right: 5%; font-size: 9pt; line-height: 2.5;">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</div>
                     </div>
@@ -129,7 +133,7 @@
                         <img src="img/work_2.png" class="work_picture">
                         <div class="top_show_cont">
                             <div>Datadash Product Design</div>
-                            <img src="img/work_pointer.svg">
+                            <img class="work_pointer" src="img/work_pointer.svg">
                         </div>
                         <div style="margin-right: 25%; font-size: 9pt; line-height: 2.5;">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</div>
                     </div>
@@ -138,7 +142,7 @@
                     <img src="img/work_3.png" class="work_picture">
                     <div class="top_show_cont_center">
                         <div>Joggr Website Design</div>
-                        <img src="img/work_pointer.svg">
+                        <img class="work_pointer" src="img/work_pointer.svg">
                     </div>
                     <div style="margin-right: 5%; font-size: 9pt; line-height: 2.5;">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</div>
                 </div>
@@ -147,7 +151,7 @@
                         <img src="img/work_4.png" class="work_picture">
                         <div class="top_show_cont">
                             <div>Otsuka Pharmaceutical</div>
-                            <img src="img/work_pointer.svg">
+                            <img class="work_pointer" src="img/work_pointer.svg">
                         </div>
                         <div style="margin-right: 25%; font-size: 9pt; line-height: 2.5;">Partnering with healthcare researchers to improve patient communications and experience.</div>
                     </div>
@@ -155,7 +159,7 @@
                         <img src="img/work_5.png" class="work_picture">
                         <div class="top_show_cont">
                             <div>Origin UI/UX Design</div>
-                            <img src="img/work_pointer.svg">
+                            <img class="work_pointer" src="img/work_pointer.svg">
                         </div>
                         <div style="margin-right: 5%; font-size: 9pt; line-height: 2.5;">Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</div>
                         <form action="https://youtu.be/dQw4w9WgXcQ?si=2iBgfRKz2jjVjhk4">
@@ -220,7 +224,7 @@
                 </div>
             </div>
         </div>
-        <div class="rating_part">
+        <div id="rating_part">
             <div class="rating_cont">
                 <div class="top_rate_highlight">
                     <div style="color: rgba(69, 67, 232, 1); letter-spacing: 2px; display: flex; justify-content: center;">
@@ -518,5 +522,6 @@
             </div>
         </div>  
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
