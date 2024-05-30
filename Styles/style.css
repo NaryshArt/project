@@ -113,6 +113,7 @@ header{
 }
 
 #dark-mode-toggle{
+    cursor:pointer;
     border-style: none;
 }
 
@@ -202,6 +203,7 @@ main{
     border-style: none;
     border-radius: 27px;
     transition: background-color 0.5s, color 0.5s;
+    cursor:pointer;
 }
 
 .hire_button div{
@@ -379,6 +381,7 @@ main{
     border-style: solid;
     border-color: rgba(69, 67, 232, 1);
     transition: background-color 0.5s, color 0.5s;
+    cursor:pointer;
 }
 
 .view_more_button:hover{
@@ -456,6 +459,7 @@ main{
     margin-top: 30px;
     border-style: none;
     border-radius: 27px;
+    cursor:pointer;
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -631,6 +635,7 @@ main{
 .shop_block{
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 .shop_cont form{
@@ -649,6 +654,7 @@ main{
     margin-top: 30px;
     border-style: none;
     border-bottom: rgba(69, 67, 232, 0.2) solid;
+    cursor:pointer;
     color: rgba(69, 67, 232, 1); 
 }
 
@@ -706,6 +712,7 @@ main{
     border-style: none;
     border-radius: 27px;
     background-color: rgba(69, 67, 232, 1); ;
+    cursor:pointer;
     transition: background-color 0.5s;
 }
 
@@ -733,6 +740,10 @@ main{
     padding-bottom: 5%;
 }
 
+.blog_img{
+    margin-right: 20px;
+}
+
 .blog_block_button{
     background-color: white;
     width: 150px;
@@ -742,6 +753,7 @@ main{
     align-items: center;
     margin-top: 30px;
     border-style: none;
+    cursor:pointer;
     border-bottom: rgba(69, 67, 232, 0.2) solid;
 }
 
@@ -842,6 +854,7 @@ main{
     align-items: center;
     margin-top: 30px;
     border: none;
+    cursor:pointer;
     background-color: transparent;
 }
 
@@ -974,6 +987,7 @@ footer{
     border-radius: 27px;
     background-color: rgba(69, 67, 232, 1);
     margin-top: 14%;
+    cursor:pointer;
     transition: background-color 0.5s;
 }
 
@@ -1000,8 +1014,72 @@ footer{
     justify-content: space-between;
     gap: 10px;
 }
-    
+
 @media (max-width: 1200px){
+    .comment{
+        display: none;
+    }
+
+    .comment_cont{
+        display: flex;
+        
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .blue_text{
+        display: flex;
+    }
+
+    .about_main_text{
+        margin-left: 20px;
+    }
+
+    .process_cont{
+        width: 100%;
+    }
+
+    .process_header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .process_header_top_text{
+        width: 100%;
+    }
+
+    .process_header_bottom_text{
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .process_steps{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .process_pointer{
+        display: none;
+    }
+
+    .process_block_bottom_text{
+        width: 100%;
+        font-size: 10pt;
+    }
+
+    .process_block_bottom_text1{
+        width: 100%;
+        
+        font-size: 10pt;
+    }    
+}
+    
+@media (max-width: 1000px){
     .nav_bar{
         display: none;
     }
@@ -1033,11 +1111,6 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    
-    .comment{
-       display: none;
     }
 
     .comment_cont{
@@ -1130,6 +1203,12 @@ footer{
     .top_work_show_conts{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+    }
+
+    .top_show_cont{
+        display: flex;
+        width: 480px;
     }
 
     .show_cont_center{
@@ -1137,6 +1216,10 @@ footer{
         flex-direction: column;
         margin-left: 0%;
         width: 100%;
+    }
+
+    .top_show_cont_center{
+        width: 480px;
     }
 
     .bottom_work_show_conts{
@@ -1217,48 +1300,6 @@ footer{
 
     }
 
-    .process_cont{
-        width: 100%;
-    }
-
-    .process_header{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        
-    }
-
-    .process_header_top_text{
-        width: 100%;
-    }
-
-    .process_header_bottom_text{
-        margin-top: 5%;
-        width: 100%;
-    }
-
-    .process_steps{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .process_pointer{
-        display: none;
-    }
-
-    .process_block_bottom_text{
-        width: 100%;
-        font-size: 10pt;
-    }
-
-    .process_block_bottom_text1{
-        width: 100%;
-        
-        font-size: 10pt;
-    }    
-
     .shop_cont{
         width: 100%;
     }
@@ -1296,8 +1337,12 @@ footer{
         flex-direction: column;
         text-align: center;
         border: solid rgba(241, 242, 246, 1);
+        border-left: none;
+        border-right:none ;
         border-bottom: none;
     }
+
+
 
     .blog_block_text_date{
         margin-top: 5%;
