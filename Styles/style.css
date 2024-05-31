@@ -636,6 +636,7 @@ main{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .shop_cont form{
